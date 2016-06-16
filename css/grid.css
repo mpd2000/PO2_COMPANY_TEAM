@@ -1,0 +1,37 @@
+
+
+
+
+/*
+	Here we are clearing floated items to ensure that
+	our 'grid' structure can have different rows
+*/
+
+[class^='grid-col-'] {
+	float: left;
+	padding: 0; 
+	text-align: center; /* center the content in this block by default */
+}
+
+
+.grid-col-1of4 {
+	width:25%;
+}
+.grid-col-1of4-leftnav {
+	width:25%;
+}
+@media screen and (max-width: 1025px){
+	.grid-col-1of4-leftnav {
+	width:100%;
+	clear:both;
+	}
+	.grid-col-1of4{
+		width:33%;
+	}
+}
+
+.grid-row:after {
+	content: "";
+	display: block;
+	clear: both;
+}
