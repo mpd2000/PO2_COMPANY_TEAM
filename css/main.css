@@ -180,6 +180,53 @@ footer{
 
 
 
+/*----------------------input field---------------------------------*/
+
+.inputFieldShort{
+	outline: none;
+	width: 33.3%;
+	padding: 0.25rem;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+	margin-right: 0.5rem;
+	border: 0.2em solid rgb(137,217,209);
+	background:;
+	color: #d9d9d9;
+
+}
+
+.inputFieldLong{
+	outline: none;
+	width: 66.6%;
+	padding: 0.25rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	border: 0.2em solid rgb(137,217,209);
+	color: #d9d9d9;
+
+	
+}
+
+.inputFieldBody{
+	outline: none;
+	width: 66.6%;
+	height: 150px;
+	padding: 0.25rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	border: 0.2em solid rgb(137,217,209);
+	color: #d9d9d9;
+
+}
+
+.inputFieldBody:focus{
+	
+}
+
+
+
+/*----------------------input field done---------------------------------*/
+
 
 
 
