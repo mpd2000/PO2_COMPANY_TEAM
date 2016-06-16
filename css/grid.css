@@ -8,18 +8,53 @@
 */
 
 [class^='grid-col-'] {
-	float: left;
-	padding: 0; 
-	text-align: center; /* center the content in this block by default */
+	/*float: left;*/
+	display: inline-block;
+	margin: 0; 
+	/*text-align: center; /* center the content in this block by default */
+}
+
+.grid-col-1of2 { /*main page second row*/
+	width:48%;
+	
+}
+.right{
+	float:right;
+}
+
+.left{
+	float:left;
+}
+.block{
+	display: block;
+
+}
+.clear{
+	clear:both;
 }
 
 
 .grid-col-1of4 {
+	float:left;
 	width:25%;
+
 }
 .grid-col-1of4-leftnav {
+	float:left;
 	width:25%;
 }
+
+
+.grid-col-2of3{
+	width:60%;
+
+}
+
+.grid-col-1of3{
+	width:32%;
+}
+
+
 @media screen and (max-width: 1025px){
 	.grid-col-1of4-leftnav {
 	width:100%;
@@ -34,4 +69,10 @@
 	content: "";
 	display: block;
 	clear: both;
+	margin:0 auto;
+	max-width:1800px;
+}
+
+ul{
+	list-style: none;
 }
