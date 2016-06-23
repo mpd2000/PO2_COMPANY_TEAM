@@ -1,3 +1,5 @@
+/*-----------------------overall design------------------------------*/
+
 img{
 	width:100%;
 	height:auto;
@@ -5,23 +7,23 @@ img{
 	display:block;
 }
 body{
-	background-color:rgb(251,248,238);
+	background-color: #171717;
 }
 h2{
-	color: #6d616f;
+	color: #eaeaea;
 	margin-top:3em;
 	margin-bottom:1em;
 	clear: both;
 }
 h3{
-	color: #6d616f;
+	color: #eaeaea;
 }
 strong{
 	text-transform: uppercase;
 	font-size:2em;
 }
 p{
-	color: #6d616f;
+	color: #eaeaea;
 }
 .navigation{
 	max-width: 1800px;
@@ -124,9 +126,7 @@ footer{
 	width:100%;
 
 }
-
-
-
+/*-----------------------overall design done------------------------------*/
 
 
 
@@ -136,14 +136,14 @@ footer{
   display: inline-block;
   font-weight: bold;
   margin-left: 5rem;
-  color: #6d616f;
+  color: #eaeaea;
   text-decoration: none;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
 }
 
 .button-nav:hover, .button-nav:focus {
-  color: rgb(137,217,209);
+  color: #66c6c5;
 }
 /*-----------------------navigation button done------------------------------*/
 
@@ -163,8 +163,8 @@ footer{
   padding: 0.5em 3em;
   margin-top:2em;
   margin-bottom: 2em;
-  color: rgb(251,248,238);
-  background-color: #6d616f;
+  color: #4a4a4a;
+  background-color: #eaeaea;
   border-radius: 0.25em;
   text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
@@ -172,7 +172,7 @@ footer{
 }
 
 .button-sub:hover, .button-nav:focus {
-  background-color:rgb(137,217,209);
+  background-color: #66c6c5;
 }
 /*----------------------button done---------------------------------*/
 
@@ -276,13 +276,6 @@ footer{
 	}
 }
 /*-----------------------mobile version done------------------------------*/
-
-
-
-
-
-
-
 
 
 
