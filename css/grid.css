@@ -37,13 +37,13 @@
 .grid-col-1of4 {
 	float:left;
 	width:25%;
-
 }
+
+
 .grid-col-1of4-leftnav {
 	float:left;
 	width:25%;
 }
-
 
 .grid-col-2of3{
 	width:60%;
@@ -55,14 +55,17 @@
 }
 
 
+
 @media screen and (max-width: 1025px){
 	.grid-col-1of4-leftnav {
 	width:100%;
 	clear:both;
 	}
+
 	.grid-col-1of4{
 		width:33%;
 	}
+
 }
 
 .grid-row:after {
