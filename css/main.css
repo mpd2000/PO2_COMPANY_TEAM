@@ -152,6 +152,13 @@ footer{
 #contact-inputfield{
 	margin-top: 8em;
 }
+
+.main-image{
+	display: block;
+	margin-top: 10em;
+	width: 50px; 
+	height: 50px;
+}
 /*-----------------------overall design done------------------------------*/
 
 
@@ -385,11 +392,6 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 
 
 /*-----------------------contact main image & follow icons done------------------------------*/
-.contact-main{
-	display: block;
-	width: 50px; 
-	height: 50px;
-}
 
 
 #crossfading{
