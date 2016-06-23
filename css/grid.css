@@ -75,6 +75,20 @@
 	margin:0 auto;
 	max-width:1800px;
 }
+@media screen and (max-width: 812px){
+	.grid-col-1of4-leftnav {
+	width:100%;
+	clear:both;
+	}
+	.grid-col-1of4{
+		width:50%;
+	}
+	.grid-col-1of2 { /*main page second row*/
+	width:100%;
+	
+}
+
+}
 
 ul{
 	list-style: none;

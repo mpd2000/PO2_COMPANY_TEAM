@@ -13,102 +13,32 @@
   </head>
 
   <body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+
+
+<script src="js/script.js"></script>
 
 
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
 
 
-<script>
-
-$(document).ready(function() {  
-
-  //select all the a tag with name equal to modal
-  $('a[name=buy]').click(function(e) {
-    //Cancel the link behavior
-    e.preventDefault();
-    
-    //Get the A tag
-    var id = $(this).attr('href');
-  
-    //Get the screen height and width
-    var maskHeight = $(document).height();
-    var maskWidth = $(window).width();
-  
-    //Set heigth and width to mask to fill up the whole screen
-    $('#mask').css({'width':maskWidth,'height':maskHeight});
-    
-    //transition effect
-    $('#mask').fadeIn(1000);  
-    $('#mask').fadeTo("slow",0.8);  
-  
-    //Get the window height and width
-    var winH = $(window).height();
-    var winW = $(window).width();
-              
-    //Set the popup window to center
-    $(id).css('top',  winH/2-$(id).height()/2);
-    $(id).css('left', winW/2-$(id).width()/2);
-  
-    //transition effect
-    $(id).fadeIn(2000); 
-  
-  });
-  
-  //if close button is clicked
-  $('.window .close').click(function (e) {
-    //Cancel the link behavior
-    e.preventDefault();
-    
-    $('#mask').hide();
-    $('.window').hide();
-  });   
-  
- 
+    <header class="nav-down">
      
-  
-
-  $(window).resize(function () {
-   
-    var box = $('#boxes .window');
- 
-        //Get the screen height and width
-        var maskHeight = $(document).height();
-        var maskWidth = $(window).width();
-      
-        //Set height and width to mask to fill up the whole screen
-        $('#mask').css({'width':maskWidth,'height':maskHeight});
-               
-        //Get the window height and width
-        var winH = $(window).height();
-        var winW = $(window).width();
-
-        //Set the popup window to center
-        box.css('top',  winH/2 - box.height()/2);
-        box.css('left', winW/2 - box.width()/2);
-   
-  }); 
-  
-});
-</script>
-
-
-  <div id="mask" style="width: 1934px; height: 1293px; display: none; opacity: 0.8;"></div>
-    <header id="top">
-    
       <div class="navigation center">
       
         <nav>
 
           <div class="logo">
-            <a href="home.html"><img src="img/ph.png" alt="logo"></a>
+            <a href="home.html"><img src="img/logo.png" alt="logo"></a>
           </div>
 
-          <div class="menu">
-            <a class="button-nav" href="shop.html">Shop</a>
-            <a class="button-nav" href="#">Board</a>
-            <a class="button-nav" href="#">About</a>
-            <a class="button-nav" href="contact.html">Contact</a>
+          <div id="cssmenu">
+            <ul>
+              <a class="button-nav shop" href="shop.html"><li>Shop</li></a>
+              <a class="button-nav board" href="#"><li>Board</li></a>
+              <a class="button-nav about" href="aboutus.html"><li>About</li></a>
+              <a class="button-nav contact" href="contact.html"><li>Contact</li></a>
+            </ul>
           </div>
 
         </nav>
@@ -122,7 +52,7 @@ $(document).ready(function() {
         <article id="detailed-view" class="center">
 
           <div class="detailed center">
-            <a href="#"><img src="img/ph2.png" alt="logo"></a>
+            <a href="#"><img src="img/celeb2.png" alt="logo"></a>
           </div>
         </article>
 
@@ -151,7 +81,7 @@ $(document).ready(function() {
                     <option value="5">5</option>
                     <option value="6">6</option>
                   </select>
-                <h2 class="textright">Img Size</h2>
+                <h2 class="textright">Image Size</h2>
                   <select class="block right">
                     <option value="">Size</option>
                     <option value="1">297mm X 210mm</option>
@@ -202,6 +132,7 @@ $(document).ready(function() {
 
       </div>
     </div>
+    <div id="mask"></div>
 
   </body>
 </html>

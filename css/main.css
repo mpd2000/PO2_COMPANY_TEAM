@@ -7,8 +7,20 @@ img{
 	display:block;
 }
 
+.contact-main{
+	width:30%;
+}
+
 body{
-	background-image: url("background2.jpg");
+	background-image: url('background.jpg');
+    
+}
+
+h1{
+	font-size: 2.5em;
+	color:#eaeaea;
+	padding-top: 0;
+	margin: 2em;
 }
 
 h2{
@@ -24,6 +36,12 @@ h3{
 
 h4{
 	font-size: 1.5em;
+	color: #66c6c5;
+	margin-top: 0rem;
+}
+
+h5{
+	font-size: 1em;
 	color: #66c6c5;
 	margin-top: 0rem;
 }
@@ -71,7 +89,7 @@ header{
 	max-height:100%;
 }
 
-.menu{
+#cssmenu{
 	display: inline-block;
 	float:right;
 	margin-top:45px;
@@ -96,6 +114,9 @@ figure{
 	
 	width:90%;
 	position:relative;
+}
+figure a{
+	text-decoration: none;
 }
 
 figcaption {
@@ -148,19 +169,7 @@ footer{
 	width:100%;
 
 }
-
-#contact-inputfield{
-	margin-top: 8em;
-}
-
-.main-image{
-	display: block;
-	margin-top: 10em;
-	width: 50px; 
-	height: 50px;
-}
 /*-----------------------overall design done------------------------------*/
-
 
 
 
@@ -180,6 +189,12 @@ footer{
   color: #66c6c5;
 }
 /*-----------------------navigation button done------------------------------*/
+
+
+
+
+
+
 
 
 
@@ -257,24 +272,24 @@ footer{
 
 
 
+
+
+
 /*-----------------------mobile version------------------------------*/
 @media screen and (max-width: 1025px){
 	
-	.navigation{
-		background-color: pink;
-		
-	}
+	
 
 	figure{
 	margin-left: 0;
 	margin:20px;
 	}
 
-	.menu{
+	#cssmenu{
 		clear: both;
 		margin: 0 auto;
-		width:100%;
-		display:block;
+		width:105%;
+		/*display:block;*/
 	}
 
 	.logo{
@@ -295,15 +310,40 @@ footer{
 	  display: inline-block;
 	  font-weight: bold;
 	  width:24%;
-	  color: #6d616f;
+	  
+	  color: #eaeaea;
 	  text-decoration: none;
 	  -webkit-transition: color 0.5s ease-out;
 	  transition: color 0.5s ease-out;
-	  text-align: center;
+	  font-size: 1rem;
 	  margin-left: 0;
+	  text-align: center;
 	}
+
+	#themes{
+		width: 105%;
+	}
+	#themes .button-leftnav{
+		display: inline-block;
+		width: 20%;
+		
+
+	}
+	#themes .showall{
+		display: inline-block;
+		width: 20%;
+		
+
+	}
+
+
 }
 /*-----------------------mobile version done------------------------------*/
+
+
+
+
+
 
 
 
@@ -385,9 +425,113 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
     
 }
 
+.mask{
+	width:1934px;
+	height:1293px;
+	display: none;
+	opacity: 0.8;
+}
 
 /*-----------------------popupdone---------------------------------*/
 
+@media screen and (max-width: 812px){
+
+.button-nav {
+	  display: inline-block;
+	  font-weight: bold;
+	  text-align: right;
+	  width: 94%;
+	  color: #6d616f;
+	  text-decoration: none;
+	  -webkit-transition: color 0.5s ease-out;
+	  transition: color 0.5s ease-out;
+	  font-size: 1.5rem;
+	  margin-left: 0;
+	}
+
+#cssmenu {
+	clear:both;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+
+   
+  }
+  #cssmenu ul {
+    position: absolute;
+    width: 100px;
+    top:110px;
+    right:47px;
+    display: none;
+    border-top: 4px solid #dddddd;
+    border-bottom: 4px solid #dddddd;
+  }
+  
+  
+  
+
+
+
+ 
+  #cssmenu #menu-button {
+    
+    cursor: pointer;
+   
+  }
+  #cssmenu #menu-button:after {
+    position: absolute;
+    top: 91px;
+    right: 47px;
+    display: block;
+    height: 10px;
+    width: 40px;
+    border-top: 4px solid #dddddd;
+    border-bottom: 4px solid #dddddd;
+    content: '';
+  }
+  #cssmenu #menu-button:before {
+    position: absolute;
+    top: 108px;
+    right: 47px;
+    display: block;
+    height: 12px;
+    width: 40px;
+    
+    content: '';
+    border-bottom: 4px solid #dddddd;
+    
+  }
+  
+  
+  .logo{
+	position: relative;
+	width:50px;
+	height: 50px;
+	display: inline-block;
+
+}
+
+.logo img{
+	max-width:100%;
+	max-height:100%;
+}
+
+#themes .button-leftnav{
+		display: inline-block;
+		width: 15%;
+		
+
+	}
+	#themes .showall{
+		display: inline-block;
+		width: 15%;
+		
+
+	}
+
+
+
+}
 
 
 
@@ -414,3 +558,49 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 
 
 /*-----------------------contact main image & follow icons done------------------------------*/
+
+
+
+
+
+
+
+/*-----------------------SHOPPAGE LEFTNAV------------------------------*/
+
+
+#themes .button-leftnav{
+
+
+  
+  font-weight: bold;
+  margin-left: 5rem;
+  color: #eaeaea;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+
+
+}
+
+#themes .button-leftnav:hover, #themes .button-leftnav:focus {
+  color: #66c6c5;
+}
+
+#themes .showall{
+	font-weight: bold;
+  margin-left: 5rem;
+  color: #66c6c5;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+
+
+}
+
+
+
+
+/*-----------------------SHOPPAGE LEFTNAV DONE------------------------------*/
+
+
+
