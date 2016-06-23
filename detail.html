@@ -14,14 +14,88 @@
 
   <body>
 
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+
+
+<script>
+
+$(document).ready(function() {  
+
+  //select all the a tag with name equal to modal
+  $('a[name=buy]').click(function(e) {
+    //Cancel the link behavior
+    e.preventDefault();
     
+    //Get the A tag
+    var id = $(this).attr('href');
+  
+    //Get the screen height and width
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+  
+    //Set heigth and width to mask to fill up the whole screen
+    $('#mask').css({'width':maskWidth,'height':maskHeight});
+    
+    //transition effect
+    $('#mask').fadeIn(1000);  
+    $('#mask').fadeTo("slow",0.8);  
+  
+    //Get the window height and width
+    var winH = $(window).height();
+    var winW = $(window).width();
+              
+    //Set the popup window to center
+    $(id).css('top',  winH/2-$(id).height()/2);
+    $(id).css('left', winW/2-$(id).width()/2);
+  
+    //transition effect
+    $(id).fadeIn(2000); 
+  
+  });
+  
+  //if close button is clicked
+  $('.window .close').click(function (e) {
+    //Cancel the link behavior
+    e.preventDefault();
+    
+    $('#mask').hide();
+    $('.window').hide();
+  });   
+  
+ 
+     
+  
+
+  $(window).resize(function () {
+   
+    var box = $('#boxes .window');
+ 
+        //Get the screen height and width
+        var maskHeight = $(document).height();
+        var maskWidth = $(window).width();
+      
+        //Set height and width to mask to fill up the whole screen
+        $('#mask').css({'width':maskWidth,'height':maskHeight});
+               
+        //Get the window height and width
+        var winH = $(window).height();
+        var winW = $(window).width();
+
+        //Set the popup window to center
+        box.css('top',  winH/2 - box.height()/2);
+        box.css('left', winW/2 - box.width()/2);
+   
+  }); 
+  
+});
+</script>
 
 
-
-
-
+  <div id="mask" style="width: 1934px; height: 1293px; display: none; opacity: 0.8;"></div>
     <header id="top">
-  	
+    
       <div class="navigation center">
       
         <nav>
@@ -56,7 +130,7 @@
           <h2 class="footnote">Illustration Name - Artist Name</h2>
               
             <div class="grid-col-2of3">
-              <p>Lorem ipsum dolor sit amet, pri id iusto admodum deleniti. Quo nulla corpora ne, vix no copiosae suavitate. Justo atqui quidam ut vix, hinc omnis aperiri has et, diceret maluisset ex ius. Detracto vituperata definitiones id eos. </p>
+              <p>Lorem ipsum dolor sit amet, pri id iusto admodum deleniti. Quo nulla corpora ne, vix no copiosae suavitate. Justo atqui quidam ut vix, hinc omnis aperiri has et, diceret maluisset ex ius. Detracto vituperata definitiones id eos. asdfsdf</p>
             </div>
 
             <div class="grid-col-1of3 right">
@@ -87,7 +161,7 @@
                   </select>
               </div>
               <div class="clear right">
-                <a class="button-sub right" href="#"><strong>Buy</strong></a>
+                <a class="button-sub right" href="#dialog" name="buy"><strong>Buy</strong></a>
               </div>
             </div>
         </article>
@@ -108,14 +182,26 @@
 
     
     </div>
+    <div id="boxes">
+      <div id="dialog" class="window">
+        <h3 class="textcenter">Picture Name</h3>
+          <form>
+            <input type="email" name="field1" placeholder="Email" />
+            <h3 class="textcenter">Card info</h3>
+            <input type="text" name="field2" placeholder="Name" />
+            <input type="text" name="field3" placeholder="Adress" />
+            <input type="text" name="field3" placeholder="Card Number" />
+            <input type="expiredDate" name="field3" class="left" placeholder="MM / YY" />
+            <input type="cvc" name="field3" class="right" placeholder="CVC" />
+            <textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea>
+            
+          </form>
 
+        
+        <a href="#" class="close button-sub right">Close it</a>
 
-    <section class="popupsection block">
-    </section>
-
-    <div class="popup">
+      </div>
     </div>
-
 
   </body>
 </html>
