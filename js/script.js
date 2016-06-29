@@ -69,6 +69,57 @@ $(document).ready(function() {
 });
 
 
+//slider
+$(document).ready(function() {
+  
+  var current=0;
+  var slide_length = $('.slide_ul>li').length;//amount of images to var
+  var btn_ul = '<ul class="slide_btn"></ul>';//add btn list on html
+  
+
+
+  $('.slide_ul>li').hide();//hide img
+  $('.slide_ul>li').first().show();//show one img
+  
+  
+  $(btn_ul).prependTo($('.slide'))//btn on slide class
+  for (var i = 0 ; i < slide_length; i++){//make circles depends on amount of li
+    var child = '<li><a href="#none">'+i+'</a></li>';
+    $(child).appendTo($('.slide_btn'));
+  }
+  
+  $('.slide_btn > li > a').first().addClass('active');  
+  $('.slide_btn > li > a').on('click' , slide_stop);
+  
+//auto slide
+function autoplay(){
+  
+  if(current == slide_length-1){
+  current = 0;
+}else{
+  current++;
+}
+  $('.slide_ul>li').stop().fadeOut(900);
+  $('.slide_ul>li').eq(current).stop().fadeIn(700);
+  $('.slide_btn > li > a').removeClass('active'); 
+  $('.slide_btn > li > a').eq(current).addClass('active');  
+}
+setInterval(autoplay,2000);//repetation
+
+//when click the button excuted
+function slide_stop(){
+    var fade_idx = $(this).parent().index(); 
+    current = $(this).parent().index();
+    if($('.slide_ul > li:animated').length >= 1) return false; //prevent delay of clicking
+    $('.slide_ul > li').fadeOut(400);
+    $('.slide_ul > li').eq(fade_idx).fadeIn(400);
+    $('.slide_btn > li > a').removeClass('active'); 
+    $(this).addClass('active');
+    
+  } 
+});
+//done
+
 
 
 (function($) {
