@@ -11,6 +11,7 @@ img{
 	width:30%;
 }
 
+
 body{
 	background-image: url('background.jpg');
     
@@ -170,6 +171,25 @@ footer{
 
 }
 /*-----------------------overall design done------------------------------*/
+
+
+
+
+
+/*-------home.html-------*/
+.backdeco{
+	background: url(../img/bg2.jpg) no-repeat center center fixed;
+	
+	background-size:cover;
+	max-width:100%;
+	padding-top: 1000px;
+}
+
+
+
+/*-------home done-------*/
+
+
 
 
 
