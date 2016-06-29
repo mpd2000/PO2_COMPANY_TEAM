@@ -35,6 +35,7 @@ h3{
 	color: #eaeaea;
 }
 
+
 h4{
 	font-size: 1.5em;
 	color: #66c6c5;
@@ -69,6 +70,7 @@ p{
 	max-width: 1800px;
 	width:94%;
 }
+
 
 header{
 	display: block;
@@ -175,6 +177,18 @@ footer{
 
 .zero-t-margin{
 	margin-top: 0em;
+}
+
+.ext-t-margin{
+	margin-top: 5em;
+}
+
+.zero-b-margin{
+	margin-bottom: 0em;
+}
+
+.ext-b-margin{
+	margin-bottom: 3.5em;
 }
 /*-----------------------overall design done------------------------------*/
 
@@ -494,6 +508,8 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 
 /*-----------------------popupdone---------------------------------*/
 
+
+
 @media screen and (max-width: 812px){
 
 .button-nav {
@@ -527,12 +543,7 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
     border-bottom: 4px solid #dddddd;
   }
   
-  
-  
-
-
-
- 
+    
   #cssmenu #menu-button {
     
     cursor: pointer;
