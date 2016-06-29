@@ -7,7 +7,7 @@ img{
 	display:block;
 }
 
-.contact-main{
+.landing-image{
 	width:30%;
 }
 
@@ -38,7 +38,7 @@ h3{
 h4{
 	font-size: 1.5em;
 	color: #66c6c5;
-	margin-top: 0rem;
+	margin-top: 5rem;
 }
 
 h5{
@@ -56,11 +56,11 @@ p{
 	color: #eaeaea;
 }
 
-.contact-message{
+.message{
 	font-size: 1.4rem;
 }
 
-.contact-title{
+.title{
 	font-size: 2.5rem;
 	font-weight: bold;
 }
@@ -172,6 +172,10 @@ footer{
 	width:100%;
 
 }
+
+.zero-t-margin{
+	margin-top: 0em;
+}
 /*-----------------------overall design done------------------------------*/
 
 
@@ -182,7 +186,7 @@ footer{
 .backdeco{
 	margin-top: 8em;
 	margin-bottom: 8em;
-	background: url(../img/bg2.jpg) no-repeat center center fixed;
+	background: url(../img/parallex1.png) no-repeat center center fixed;
 	height: auto;
 	background-size:cover;
 	max-width:100%;
