@@ -102,6 +102,7 @@ header{
 }
 
 
+
 figure img{
 	width:100%;
 	opacity:1;
@@ -163,6 +164,7 @@ article {
 
 footer{
 	clear:both;
+	width:100%;
 }
 
 .detailed{
@@ -178,14 +180,47 @@ footer{
 
 /*-------home.html-------*/
 .backdeco{
+	margin-top: 8em;
+	margin-bottom: 8em;
 	background: url(../img/bg2.jpg) no-repeat center center fixed;
-	
+	height: auto;
 	background-size:cover;
 	max-width:100%;
 	padding-top: 1000px;
 }
 
+.footer{
 
+	margin-top: 8em;
+	margin-bottom: 8em;
+	background: url(../img/footer.png) no-repeat center center fixed;
+	
+	background-size:auto;
+	max-width:100%;
+	padding-top: 600px;
+
+
+}
+
+
+.slidediv{padding-top:25px;}
+.slide{text-align:center; position:relative; width: 100%; margin-top:0px; display: block; clear:both;}
+
+.slide_ul{display: block; margin-top:20px; width: 100%;}
+.slide_ul>li{position:absolute; top:0; left:0; list-style:none;z-index:10; display: block; width:100%;}
+.slide_ul>li img{}
+li{list-style: none;}
+
+.show{display:block;}
+
+.slide_btn>li{float: left; margin:0 5px 5px 0;}
+.slide_btn>li>a{display:block; width: 14px; height:14px; background: url(../img/circle.png) -24px -125px; text-indent: -999em; }
+.slide_btn>li>a.active{background-position: 0 -126px;}
+
+.slide_btn{z-index:90000; position:absolute; right: 0; bottom:0; }
+
+.slide_btn:after{content:''; display:block; clear:both;}
+.slide_btn{*zoom:1;}
 
 /*-------home done-------*/
 
