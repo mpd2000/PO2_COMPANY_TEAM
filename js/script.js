@@ -118,23 +118,23 @@ function slide_stop(){
     
   } 
 });
-//done
+//slider done
 
 
 
 (function($) {
 
-  $.fn.menumaker = function(options) {
+  $.fn.hamburger = function(options) {
       
       var cssmenu = $(this), settings = $.extend({
-        title: "",
-        
-        sticky: false
+       
       }, options);
 
       return this.each(function() {
-        cssmenu.prepend('<div id="menu-button">' + settings.title + '</div>');
+        cssmenu.prepend('<div id="menu-button">' +  '</div>');
         $(this).find("#menu-button").on('click', function(){
+
+          
 
           $(this).toggleClass('menu-opened');
           
@@ -148,9 +148,8 @@ function slide_stop(){
           }
         });
         
-        if (settings.sticky === true) cssmenu.css('position', 'fixed');
 
-        resizeFix = function() {
+        resize = function() {
           if ($( window ).width() > 795) {
             cssmenu.find('ul').show();
           }
@@ -159,7 +158,7 @@ function slide_stop(){
             cssmenu.find('ul').hide().removeClass('open');
           }
         };
-        resizeFix();
+        resize();
         return $(window).on('resize', resizeFix);
 
       });
@@ -169,9 +168,8 @@ function slide_stop(){
 (function($){
 $(document).ready(function(){
 
-$("#cssmenu").menumaker({
-   title: "",
-   format: "multitoggle"
+$("#cssmenu").hamburger({
+   
 });
 
 });
