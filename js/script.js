@@ -23,10 +23,7 @@ $(document).ready(function() {
     var winH = $(window).height();
     var winW = $(window).width();
               
-    //Set the popup window to center
-    $(id).css('top',  winH/2-$(id).height()/2);
-    $(id).css('left', winW/2-$(id).width()/2);
-  
+    
     //transition effect
     $(id).fadeIn(2000); 
   
@@ -56,13 +53,6 @@ $(document).ready(function() {
         //Set height and width to mask to fill up the whole screen
         $('#mask').css({'width':maskWidth,'height':maskHeight});
                
-        //Get the window height and width
-        var winH = $(window).height();
-        var winW = $(window).width();
-
-        //Set the popup window to center
-        box.css('top',  winH/2 - box.height()/2);
-        box.css('left', winW/2 - box.width()/2);
    
   }); 
   
