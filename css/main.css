@@ -17,6 +17,8 @@ body{
     
 }
 
+
+/*landing page title*/
 h1{
 	font-size: 2.5em;
 	color:#d7d7d7;
@@ -24,12 +26,15 @@ h1{
 	margin: 2em;
 }
 
+
+/*sub-header*/
 h2{
 	color: #d7d7d7;
 	margin-top:3em;
 	margin-bottom:1em;
 	clear: both;
 }
+
 
 /*detail page tage*/
 h3{
@@ -58,10 +63,20 @@ strong{
 
 p{
 	color: #d7d7d7;
+	font-size: 1.4rem;
 }
 
+header{
+	display: block;
+	width:100%;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+/*additional font design*/
+
 .message{
-	font-size: 1.4rem;
+	font-size: 1.7rem;
 }
 
 .title{
@@ -74,13 +89,19 @@ p{
 	width:94%;
 }
 
-
-header{
-	display: block;
-	width:100%;
-	margin-top: 3em;
-	margin-bottom: 3em;
+.pna{
+	font-size: 2.3rem;
 }
+
+.artist{
+	font-size:0.6em;
+}
+
+.turquoise{
+	color: #66c6c5
+}
+
+/*logo style*/
 
 .logo{
 	position: relative;
@@ -164,7 +185,7 @@ article {
 }
 
 .footnote{
-	padding: 4em 0;
+	padding: 2em 0;
 }
 
 footer{
@@ -907,4 +928,12 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 >>>>>>> origin/master
 
 
+/*-----------------------Divider -----------------------------*/
+.divider{
+	display: inline-block;
+	border-top: 0.1em solid #66c6c5;
+	border-bottom: 0.1em solid #66c6c5;
 
+}
+
+/*-----------------------divider DONE------------------------------*/
