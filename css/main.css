@@ -105,6 +105,10 @@ header{
 	color: #d7d7d7;
 }
 
+.bold{
+	font-weight: bold;
+}
+
 /*logo style*/
 
 .logo{
