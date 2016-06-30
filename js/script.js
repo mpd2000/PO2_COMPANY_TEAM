@@ -104,7 +104,7 @@ function autoplay(){
   $('.slide_btn > li > a').removeClass('active'); 
   $('.slide_btn > li > a').eq(current).addClass('active');  
 }
-setInterval(autoplay,2000);//repetation
+setInterval(autoplay,6000);//repetation
 
 //when click the button excuted
 function slide_stop(){
@@ -142,10 +142,13 @@ function slide_stop(){
           if (mainmenu.hasClass('open')) { 
             mainmenu.hide().removeClass('open');
           }
+
           else {
             mainmenu.show().addClass('open');
            
           }
+
+
         });
         
 
@@ -154,7 +157,7 @@ function slide_stop(){
             cssmenu.find('ul').show();
           }
 
-          if ($(window).width() <= 795) {
+          if ($(window).width() < 795) {
             cssmenu.find('ul').hide().removeClass('open');
           }
         };

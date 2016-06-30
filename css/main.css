@@ -75,8 +75,8 @@ p{
 header{
 	display: block;
 	width:100%;
-	margin-top: 5em;
-	margin-bottom: 6em;
+	margin-top: 3em;
+	margin-bottom: 3em;
 }
 
 .logo{
@@ -349,72 +349,6 @@ li{list-style: none;}
 
 
 
-/*-----------------------mobile version------------------------------*/
-@media screen and (max-width: 1025px){
-	
-	
-
-	figure{
-	margin-left: 0;
-	margin:20px;
-	}
-
-	#cssmenu{
-		clear: both;
-		margin: 0 auto;
-		width:105%;
-		/*display:block;*/
-	}
-
-	.logo{
-
-		margin:0 auto;
-		width:50px;
-		height: 50px;
-		display: block;
-
-	}
-
-	.logo img{
-		max-width:100%;
-		max-height:100%;
-	}
-
-	.button-nav {
-	  display: inline-block;
-	  font-weight: bold;
-	  width:24%;
-	  
-	  color: #eaeaea;
-	  text-decoration: none;
-	  -webkit-transition: color 0.5s ease-out;
-	  transition: color 0.5s ease-out;
-	  font-size: 1rem;
-	  margin-left: 0;
-	  text-align: center;
-	}
-
-	#themes{
-		width: 105%;
-	}
-	#themes .button-leftnav{
-		display: inline-block;
-		width: 20%;
-		
-
-	}
-	#themes .showall{
-		display: inline-block;
-		width: 20%;
-		
-
-	}
-
-
-}
-/*-----------------------mobile version done------------------------------*/
-
-
 
 
 
@@ -511,100 +445,6 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 
 
 
-@media screen and (max-width: 812px){
-
-.button-nav {
-	  display: inline-block;
-	  font-weight: bold;
-	  text-align: right;
-	  width: 94%;
-	  color: #6d616f;
-	  text-decoration: none;
-	  -webkit-transition: color 0.5s ease-out;
-	  transition: color 0.5s ease-out;
-	  font-size: 1.5rem;
-	  margin-left: 0;
-	}
-
-#cssmenu {
-	clear:both;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 25px;
-
-   
-  }
-  #cssmenu ul {
-    position: absolute;
-    width: 100px;
-    top:110px;
-    right:47px;
-    display: none;
-    border-top: 4px solid #dddddd;
-    border-bottom: 4px solid #dddddd;
-  }
-  
-    
-  #cssmenu #menu-button {
-    
-    cursor: pointer;
-   
-  }
-  #cssmenu #menu-button:after {
-    position: absolute;
-    top: 91px;
-    right: 47px;
-    display: block;
-    height: 10px;
-    width: 40px;
-    border-top: 4px solid #dddddd;
-    border-bottom: 4px solid #dddddd;
-    content: '';
-  }
-  #cssmenu #menu-button:before {
-    position: absolute;
-    top: 108px;
-    right: 47px;
-    display: block;
-    height: 12px;
-    width: 40px;
-    
-    content: '';
-    border-bottom: 4px solid #dddddd;
-    
-  }
-  
-  
-  .logo{
-	position: relative;
-	width:50px;
-	height: 50px;
-	display: inline-block;
-
-}
-
-.logo img{
-	max-width:100%;
-	max-height:100%;
-}
-
-#themes .button-leftnav{
-		display: inline-block;
-		width: 15%;
-		
-
-	}
-	#themes .showall{
-		display: inline-block;
-		width: 15%;
-		
-
-	}
-
-
-
-}
-
 
 
 /*-----------------------contact main image & follow icons done------------------------------*/
@@ -673,6 +513,187 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 
 
 /*-----------------------SHOPPAGE LEFTNAV DONE------------------------------*/
+
+
+
+
+
+
+
+
+/*-----------------------tablet version------------------------------*/
+@media screen and (max-width: 1025px){
+	
+	
+
+	figure{
+	margin-left: 0;
+	margin:20px;
+	}
+
+	#cssmenu{
+		clear: both;
+		margin: 0 auto;
+		width:105%;
+		/*display:block;*/
+	}
+
+	.logo{
+
+		margin:0 auto;
+		width:50px;
+		height: 50px;
+		display: block;
+
+	}
+
+	.logo img{
+		max-width:100%;
+		max-height:100%;
+	}
+
+	.button-nav {
+	  display: inline-block;
+	  font-weight: bold;
+	  width:24%;
+	  
+	  color: #eaeaea;
+	  text-decoration: none;
+	  -webkit-transition: color 0.5s ease-out;
+	  transition: color 0.5s ease-out;
+	  font-size: 1rem;
+	  margin-left: 0;
+	  text-align: center;
+	}
+
+	#themes{
+		width: 105%;
+	}
+	#themes .button-leftnav{
+		display: inline-block;
+		width: 20%;
+		
+
+	}
+	#themes .showall{
+		display: inline-block;
+		width: 20%;
+		
+
+	}
+
+
+}
+/*-----------------------tablet version done------------------------------*/
+
+
+
+
+
+
+
+
+/*-----------------------mobile size---------------------------------*/
+
+@media screen and (max-width: 812px){
+
+.button-nav {
+	  display: inline-block;
+	  font-weight: bold;
+	  text-align: right;
+	  width: 94%;
+	  color: #6d616f;
+	  text-decoration: none;
+	  -webkit-transition: color 0.5s ease-out;
+	  transition: color 0.5s ease-out;
+	  font-size: 1.5rem;
+	  margin-left: 0;
+	}
+
+#cssmenu {
+	clear:both;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+
+   
+  }
+  #cssmenu ul {
+    position: absolute;
+    width: 100px;
+    top:110px;
+    right:47px;
+    display: none;
+    border-top: 4px solid #dddddd;
+    border-bottom: 4px solid #dddddd;
+  }
+  
+    
+  #cssmenu #menu-button {
+    
+    cursor: pointer;
+   
+  }
+
+  .logo{
+  	position: absolute;
+  	top:33px;
+  }
+  #cssmenu #menu-button:after {
+    position: absolute;
+    top: 91px;
+    right: 47px;
+    display: block;
+    height: 10px;
+    width: 40px;
+    border-top: 4px solid #dddddd;
+    border-bottom: 4px solid #dddddd;
+    content: '';
+  }
+  #cssmenu #menu-button:before {
+    position: absolute;
+    top: 108px;
+    right: 47px;
+    display: block;
+    height: 12px;
+    width: 40px;
+    
+    content: '';
+    border-bottom: 4px solid #dddddd;
+    
+  }
+  
+  
+  .logo{
+	position: relative;
+	width:50px;
+	height: 50px;
+	display: inline-block;
+
+}
+
+.logo img{
+	max-width:100%;
+	max-height:100%;
+}
+
+#themes .button-leftnav{
+		display: inline-block;
+		width: 15%;
+		
+
+	}
+	#themes .showall{
+		display: inline-block;
+		width: 15%;
+		
+
+	}
+
+
+
+}
+/*-----------------------mobile size done---------------------------------*/
 
 
 
