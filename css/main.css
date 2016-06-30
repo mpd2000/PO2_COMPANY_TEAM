@@ -282,12 +282,41 @@ li{list-style: none;}
   font-weight: bold;
   margin-left: 5rem;
   color: #d7d7d7;
+  font-size:2rem;
   text-decoration: none;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
 }
 
 .button-nav:hover, .button-nav:focus {
+  color: #66c6c5;
+}
+
+#small-navi {
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
+
+.button-smallnav {
+  display: inline-block;
+  font-weight: bold;
+  font-size:12px;
+  margin-right: 2rem;
+  color: #d7d7d7;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+.arrow{
+	 display: inline-block;
+  	font-weight: bold;
+  	font-size:12px;
+  	margin-right: 2rem;
+  	color: #d7d7d7;
+  	text-decoration: none;
+}
+
+.button-smallnav:hover, .button-smallnav:focus {
   color: #66c6c5;
 }
 /*-----------------------navigation button done------------------------------*/
@@ -389,69 +418,6 @@ li{list-style: none;}
 
 
 
-/*-----------------------mobile version------------------------------*/
-@media screen and (max-width: 1025px){
-	
-	figure{
-	margin-left: 0;
-	margin:20px;
-	}
-
-	#cssmenu{
-		clear: both;
-		margin: 0 auto;
-		width:105%;
-		/*display:block;*/
-	}
-
-	.logo{
-
-		margin:0 auto;
-		width:50px;
-		height: 50px;
-		display: block;
-
-	}
-
-	.logo img{
-		max-width:100%;
-		max-height:100%;
-	}
-
-	.button-nav {
-	  display: inline-block;
-	  font-weight: bold;
-	  width:24%;
-	  
-	  color: #d7d7d7;
-	  text-decoration: none;
-	  -webkit-transition: color 0.5s ease-out;
-	  transition: color 0.5s ease-out;
-	  font-size: 1rem;
-	  margin-left: 0;
-	  text-align: center;
-	}
-
-	#themes{
-		width: 105%;
-	}
-	#themes .button-leftnav{
-		display: inline-block;
-		width: 20%;
-		
-
-	}
-	#themes .showall{
-		display: inline-block;
-		width: 20%;
-		
-
-	}
-
-
-}
-/*-----------------------mobile version done------------------------------*/
-
 
 
 
@@ -551,29 +517,6 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 
 
 
-/*-----------------------contact main image & follow icons done------------------------------*/
-
-
-#crossfading{
-	position: relative;
-	width: 50px;
-	height: 50px;
-	
-}
-
-#crossfading img{
-	position: absolute;
-	display: inline-block;
-	-webkit-transition: opacity 5s ease-out;
-    transition: opacity 5s ease-out;
-}
-
-.follow-icon-top:hover, .follow-icon-top:focus {
-  opacity: 0;
-}
-
-
-/*-----------------------contact main image & follow icons done------------------------------*/
 
 
 
@@ -590,7 +533,7 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
   
   font-weight: bold;
   margin-left: 5rem;
-  color: #eaeaea;
+  color: #d7d7d7;
   text-decoration: none;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
@@ -661,11 +604,11 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 	  font-weight: bold;
 	  width:24%;
 	  
-	  color: #eaeaea;
+	  color: #d7d7d7;
 	  text-decoration: none;
 	  -webkit-transition: color 0.5s ease-out;
 	  transition: color 0.5s ease-out;
-	  font-size: 1rem;
+	  font-size: 2rem;
 	  margin-left: 0;
 	  text-align: center;
 	}
@@ -684,7 +627,14 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 		width: 20%;
 		
 
+
 	}
+
+
+	#small-navi {
+	margin-bottom: 2em;
+	float:left;
+}
 
 
 }
@@ -701,6 +651,11 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 
 @media screen and (max-width: 812px){
 
+	#small-navi {
+	visibility: hidden;
+	margin-top: 0em;
+	}
+
 	.button-nav {
 		  display: inline-block;
 		  font-weight: bold;
@@ -713,6 +668,8 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 		  font-size: 1.5rem;
 		  margin-left: 0;
 	}
+  
+  
 
 	#cssmenu {
 		clear:both;
@@ -740,7 +697,7 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 	 
 	#cssmenu #menu-button:after {
 	    position: absolute;
-	    top: 91px;
+	    top: 40px;
 	    right: 47px;
 	    display: block;
 	    height: 10px;
@@ -752,7 +709,7 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 
 	#cssmenu #menu-button:before {
 	    position: absolute;
-	    top: 108px;
+	    top: 58px;
 	    right: 47px;
 	    display: block;
 	    height: 12px;
@@ -765,9 +722,8 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 	  
 	  
 	.logo{
-		position: relative;
-		width:50px;
-		height: 50px;
+		position: absolute;
+		top:30px;
 		display: inline-block;
 	}
 
@@ -788,7 +744,10 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 	}
 }
 
+
 /*-----------------------mobile size done---------------------------------*/
+
+
 
 
 
@@ -825,42 +784,6 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 
 
 
-/*-----------------------SHOPPAGE LEFTNAV------------------------------*/
-
-
-#themes .button-leftnav{
-
-
-  
-  font-weight: bold;
-  margin-left: 5rem;
-  color: #d7d7d7;
-  text-decoration: none;
-  -webkit-transition: color 0.5s ease-out;
-  transition: color 0.5s ease-out;
-
-
-}
-
-#themes .button-leftnav:hover, #themes .button-leftnav:focus {
-  color: #66c6c5;
-}
-
-#themes .showall{
-	font-weight: bold;
-  margin-left: 5rem;
-  color: #66c6c5;
-  text-decoration: none;
-  -webkit-transition: color 0.5s ease-out;
-  transition: color 0.5s ease-out;
-
-
-}
-
-
-
-
-/*-----------------------SHOPPAGE LEFTNAV DONE------------------------------*/
 
 
 /*-----------------------Divider -----------------------------*/
@@ -872,3 +795,7 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 }
 
 /*-----------------------divider DONE------------------------------*/
+
+
+/*------------detail page-----------------*/
+

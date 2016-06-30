@@ -54,6 +54,9 @@
 	width:32%;
 }
 
+.grid-col-3of4{
+	width:71%;
+}
 
 
 @media screen and (max-width: 1025px){
