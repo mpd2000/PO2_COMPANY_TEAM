@@ -167,6 +167,7 @@ article {
 footer{
 	clear:both;
 	width:100%;
+	
 }
 
 .detailed{
@@ -209,11 +210,11 @@ footer{
 
 .footer{
 
-	margin-top: 8em;
+	margin-top: 20em;
 	
 	background: url(../img/footer2.png) no-repeat center center fixed;
 	
-	background-size:100%;
+	background-size:cover;
 	width:100%;
 	padding-bottom: 600px;
 
