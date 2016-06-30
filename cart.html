@@ -159,7 +159,7 @@
 <!--Buy button -->
          <article class ="center">
           <div class ="center right">
-            <a class="button-sub" href="home.html"><strong>Buy</strong></a>
+            <a class="button-sub" href="#dialog" name="buy"><strong>Buy</strong></a>
           </div>
          </article>
       </section>
@@ -176,6 +176,32 @@
 
 
     </div>
+
+     <div id="boxes">
+      <div id="dialog" class="window">
+        <div class="grid-col-1of3-box left"></div>
+        <div class="grid-col-1of3-box"><h5 class="textcenter">GAGADONA</h5></div>
+        <div class="grid-col-1of3-box right"><a href="#" class="close button-sub clo">X</a></div>
+        <img src="img/celeb2.png" class="gaga">
+          <form>
+            <input type="email" name="field1" placeholder="Email" />
+            <h2 class="textcenter">Card info</h2>
+            <input type="text" name="field2" placeholder="Name" />
+            <input type="text" name="field3" placeholder="Adress" />
+            <input type="text" name="field3" placeholder="Card Number" />
+            <input type="expiredDate" name="field3" class="left" placeholder="MM / YY" />
+            <input type="cvc" name="field3" class="right" placeholder="CVC" />
+            <textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea>
+            
+          </form>
+
+        
+        <a href="submit-confirm.html" class="button-sub right">PURCHASE</a>
+
+      </div>
+    </div>
+
+    <div id="mask"></div>
   </body>
 </html>
 
