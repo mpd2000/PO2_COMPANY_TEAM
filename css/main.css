@@ -7,10 +7,6 @@ img{
 	display:block;
 }
 
-.landing-image{
-	width:30%;
-}
-
 
 body{
 	background-image: url('background-main.png');
@@ -109,7 +105,7 @@ header{
 	font-weight: bold;
 }
 
-/*logo style*/
+/*image style*/
 
 .logo{
 	position: relative;
@@ -122,6 +118,14 @@ header{
 .logo img{
 	max-width:100%;
 	max-height:100%;
+}
+
+.landing-image{
+	width:30%;
+}
+
+#cart-img{
+	width: 50%;
 }
 
 #cssmenu{
@@ -222,6 +226,10 @@ footer{
 
 .ext-b-margin{
 	margin-bottom: 3.5em;
+}
+
+.half-b-margin{
+	margin-bottom: 1.25em;
 }
 /*-----------------------overall design done------------------------------*/
 
@@ -360,7 +368,7 @@ li{list-style: none;}
 
 /*----------------------input field & dropdown---------------------------------*/
 
-.inputFieldShort{
+.inputField{
 	display: inline-block;
 	outline: none;
 	width: 100%;
@@ -374,19 +382,6 @@ li{list-style: none;}
 
 }
 
-.inputFieldLong{
-	display: inline-block;
-	outline: none;
-	width: 100%;
-	height: 25px;
-	padding: 0.25rem;
-	margin-top: 1rem;
-	margin-bottom: 0.5rem;
-	border: 0.2em solid #66c6c5;
-	color: #5b5b5b;
-
-	
-}
 
 .inputFieldBody{
 	display: inline-block;
@@ -398,6 +393,18 @@ li{list-style: none;}
 	margin-bottom: 0.5rem;
 	border: 0.2em solid #66c6c5;
 	color: #5b5b5b;
+}
+
+.inputFieldCart{
+	display: inline-block;
+	outline: none;
+	width: 60%;
+	height: 25px;
+	padding: 0.25rem;
+	margin-top: 1rem;
+	border: 0.2em solid #66c6c5;
+	color: #5b5b5b;
+
 }
 
 
@@ -788,7 +795,7 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 
 
 
-/*-----------------------Divider -----------------------------*/
+/*-----------------------divider -----------------------------*/
 .divider{
 	display: inline-block;
 	border-top: 0.15em solid #66c6c5;
@@ -797,8 +804,9 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 }
 
 .bottom-divider{
-	display: inline-block;
+	display: block;
 	border-bottom: 0.15em solid #66c6c5;
+	margin-top: 1.2em;
 }
 
 /*-----------------------divider DONE------------------------------*/
