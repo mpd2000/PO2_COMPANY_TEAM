@@ -198,6 +198,7 @@ article {
 
 footer{
 	clear:both;
+	padding-top: 2em;
 	width:100%;
 	
 }
@@ -242,7 +243,7 @@ footer{
 
 .footer{
 
-	margin-top: 20em;
+	margin-top: 2em;
 	
 	background: url(../img/footer2.png) no-repeat center center fixed;
 	
@@ -444,8 +445,9 @@ li{list-style: none;}
 -moz-box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
   position:fixed;
-  left:0;
-  top:0;
+  margin:-280px 0px 0 -180px;
+  top:50%;
+  left:50%;
   width:300px;
   height:440px;
   display:none;
@@ -458,6 +460,7 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 #boxes #dialog {
   width:320px; 
   height:475px;
+
 
   
   background-color:#ffffff;
