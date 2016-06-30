@@ -569,7 +569,7 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 
 
 /*-----------------------tablet version------------------------------*/
-@media screen and (max-width: 1025px){
+@media screen and (max-width: 1162px){
 	
 	
 
@@ -651,11 +651,9 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 
 @media screen and (max-width: 812px){
 
-	#small-navi {
-	visibility: hidden;
-	margin-top: 0em;
-	}
+	
 
+	
 	.button-nav {
 		  display: inline-block;
 		  font-weight: bold;
