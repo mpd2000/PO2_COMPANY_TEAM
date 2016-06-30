@@ -618,7 +618,9 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 	}
 
 	#themes{
-		width: 105%;
+		width: 100%;
+		
+		right:auto ;
 	}
 	#themes .button-leftnav{
 		display: inline-block;

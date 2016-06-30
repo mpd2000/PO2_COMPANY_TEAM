@@ -65,6 +65,7 @@
 @media screen and (max-width: 1162px){
 	.grid-col-1of4-leftnav {
 	width:100%;
+	margin-left: 20px;
 	clear:both;
 	}
 
