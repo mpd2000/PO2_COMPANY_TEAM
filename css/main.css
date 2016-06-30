@@ -796,6 +796,11 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 
 }
 
+.bottom-divider{
+	display: inline-block;
+	border-bottom: 0.15em solid #66c6c5;
+}
+
 /*-----------------------divider DONE------------------------------*/
 
 
