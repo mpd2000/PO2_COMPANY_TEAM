@@ -57,6 +57,10 @@
 	margin-bottom: 3em;
 }
 
+.grid-col-1of3-box{
+	width:32%;
+	margin-top: 0.7em;
+}
 .grid-col-3of4{
 	width:71%;
 }
