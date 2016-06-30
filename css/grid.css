@@ -13,7 +13,9 @@
 	margin: 0; 
 	/*text-align: center; /* center the content in this block by default */
 }
-
+.grid100{
+	width:100%;
+}
 .grid-col-1of2 { /*main page second row*/
 	width:48%;
 	
@@ -59,7 +61,7 @@
 }
 
 
-@media screen and (max-width: 1025px){
+@media screen and (max-width: 1162px){
 	.grid-col-1of4-leftnav {
 	width:100%;
 	clear:both;
@@ -67,6 +69,15 @@
 
 	.grid-col-1of4{
 		width:33%;
+	}
+	.grid-col-1of3{
+		clear:both;
+		width:100%;
+		margin-bottom: 3em;
+	}
+	.grid-col-2of3{
+		clear:both;
+		width:100%;
 	}
 
 }
