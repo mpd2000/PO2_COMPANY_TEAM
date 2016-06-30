@@ -353,6 +353,16 @@ li{list-style: none;}
 .button-sub:hover, .button-nav:focus {
   background-color: #66c6c5;
 }
+
+.clo{
+	margin-top:0;
+	margin-bottom:0;
+	padding-right: 5px;
+	padding-left:5px;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	float:right;
+}
 /*----------------------button done---------------------------------*/
 
 
@@ -445,7 +455,7 @@ li{list-style: none;}
 -moz-box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
   position:fixed;
-  margin:-280px 0px 0 -180px;
+  margin:-395px 0px 0 -180px;
   top:50%;
   left:50%;
   width:300px;
@@ -458,9 +468,14 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 }
 
 
+.gaga{
+	border-radius: 5%;
+	margin-bottom: 1em;
+}
+
 #boxes #dialog {
   width:320px; 
-  height:475px;
+  height:705px;
 
 
   
@@ -725,17 +740,30 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 
 	   
 	}
-	 
+
+
+	.shop, .cart, .share{
+		border-bottom: 0.15em solid #dddddd;
+
+	}
+
+
 	#cssmenu ul {
 	    position: absolute;
-	    width: 100px;
-	    top:110px;
-	    right:47px;
+	    width: 88%;
+	    top:70px;
+	    right:3.8%;
 	    display: none;
 	    border-top: 4px solid #dddddd;
 	    border-bottom: 4px solid #dddddd;
+	    z-index: 999999;
+	    background-color:rgba(0,0,0,0.9);
 	}
-	  
+	#cssmenu li {
+		margin-top:2em;
+		margin-bottom: 2em;
+		text-align: center;
+	}
 	    
 	#cssmenu #menu-button {
 	    cursor: pointer;
@@ -744,7 +772,7 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 	#cssmenu #menu-button:after {
 	    position: absolute;
 	    top: 40px;
-	    right: 47px;
+	    right:4%;
 	    display: block;
 	    height: 10px;
 	    width: 40px;
@@ -756,7 +784,7 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 	#cssmenu #menu-button:before {
 	    position: absolute;
 	    top: 58px;
-	    right: 47px;
+	    right:4%;
 	    display: block;
 	    height: 12px;
 	    width: 40px;
