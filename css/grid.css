@@ -41,6 +41,11 @@
 	width:25%;
 }
 
+.grid-col-1of4-cart {
+	float:left;
+	width:25%;
+}
+
 
 .grid-col-1of4-leftnav {
 	float:left;
@@ -74,6 +79,10 @@
 	width:83%;
 }
 
+.grid-col-1of2-cart{
+	width:48%;
+}
+
 
 @media screen and (max-width: 1162px){
 	.grid-col-1of4-leftnav {
@@ -101,13 +110,22 @@
 	margin-bottom: 3em;
 	clear:both;
 	margin-top:3em;
-}
-.grid-col-5of6{
-	width:95%;
-	
+	}
+	.grid-col-5of6{
+		width:95%;
+		
 
-	
-}
+		
+	}
+
+	.grid-col-1of2-cart{
+		width:100%;
+	}
+
+	.grid-col-1of4 {
+		float:left;
+		width:25%;
+	}
 
 
 }
