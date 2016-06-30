@@ -1,5 +1,19 @@
 /*-----------------------overall design------------------------------*/
 
+@font-face {
+	font-family: 'segoeui';
+	src: url('fonts/segoeui.ttf') format('truetype');
+}
+	
+
+@font-face {
+	font-family: 'segoeuib';
+	src: url('fonts/segoeuib') format('truetype');
+
+}
+
+
+
 img{
 	width:100%;
 	height:auto;
@@ -25,6 +39,7 @@ h1{
 
 /*sub-header*/
 h2{
+	font-family: 'segoeui';
 	color: #d7d7d7;
 	margin-top:1em;
 	margin-bottom:1em;
@@ -34,6 +49,7 @@ h2{
 
 /*detail page tage*/
 h3{
+	font-family: 'segoeui';
 	font-size: 1.5em;
 	color: #d7d7d7;;
 }
@@ -41,12 +57,14 @@ h3{
 
 /*contact&share page tag */
 h4{
+	font-family: 'segoeui';
 	font-size: 1.5em;
 	color: #66c6c5;
 	margin-top: 5rem;
 }
 
 h5{
+	font-family: 'segoeui';
 	font-size: 1em;
 	color: #66c6c5;
 	margin-top: 0rem;
@@ -58,6 +76,7 @@ strong{
 }
 
 p{
+	font-family: "segoeui";
 	color: #d7d7d7;
 	font-size: 1.4rem;
 }
