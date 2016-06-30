@@ -421,7 +421,7 @@ li{list-style: none;}
 	width: 20%;
 	height: 25px;
 	padding: 0.25rem;
-	margin-top: 1rem;
+	margin-top: 0;
 	border: 0.2em solid #66c6c5;
 	color: #5b5b5b;
 
@@ -882,15 +882,23 @@ box-shadow: 13px 18px 24px 6px rgba(0,0,0,0.75);
 	display: inline-block;
 	border-top: 0.15em solid #66c6c5;
 	border-bottom: 0.15em solid #66c6c5;
+	padding-top:2em;
+	padding-bottom: 2em;
+
 
 }
 
-.inter-divider{
-	display: block;
+.bot-divider{
+	display: inline-block;
+	
 	border-bottom: 0.15em solid #66c6c5;
-	padding-top: 1.2em;
-	padding-bottom:1.2em;
+	padding-top:2em;
+	padding-bottom: 2em;
+
+
 }
+
+
 
 /*-----------------------divider DONE------------------------------*/
 
