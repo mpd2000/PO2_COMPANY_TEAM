@@ -65,6 +65,15 @@
 	width:71%;
 }
 
+.grid-col-1of6{
+
+	width:7%;
+	margin-bottom: 3em;
+}
+.grid-col-5of6{
+	width:83%;
+}
+
 
 @media screen and (max-width: 1162px){
 	.grid-col-1of4-leftnav {
@@ -85,6 +94,21 @@
 		clear:both;
 		width:100%;
 	}
+
+	.grid-col-1of6{
+	
+	width:15%;
+	margin-bottom: 3em;
+	clear:both;
+	margin-top:3em;
+}
+.grid-col-5of6{
+	width:95%;
+	
+
+	
+}
+
 
 }
 
